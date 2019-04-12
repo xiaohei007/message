@@ -1,0 +1,42 @@
+.message{
+    padding:10px 15px;
+    line-height: 25px;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-100px);
+    animation: message 2.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    min-width: 18rem;
+    color: white;
+    font-size: 14px;
+    z-index: 10000;
+}
+.info{
+   background-color: #909399;
+}
+.success{
+    background-color: #67C23A;
+}
+.warning{
+    background-color: #E6A23C;
+}
+.error{
+    background-color: #F56C6C;
+}
+
+@keyframes message{
+    0%{
+        transform: translate(-50%,-100px);
+    }
+    25%{
+        transform: translate(-50%,50px);
+    }
+    50%{
+        transform: translate(-50%,50px);
+    }
+    100%{
+        transform: translate(-50%,-100px);
+    }
+
+}
